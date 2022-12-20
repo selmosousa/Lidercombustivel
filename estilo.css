@@ -1,0 +1,202 @@
+.cabecalho {
+    display: flex;
+}
+
+.cabecalho__img {
+    width: 20rem;
+}
+
+.principal__titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border-top: 1px solid gray;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+}
+
+.carrossel {
+    width: 100%;
+    /* height: 500px; */
+}
+
+.carrossel__img {
+    width: 100% ;
+    height: 50px;
+}
+
+
+.principal__texto {
+    padding: 1rem 0;
+    font-size: 15px;
+}
+
+.titulo__explicacao {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+    padding-bottom: 1rem;
+    padding-top: 3.5rem;
+}
+
+.titulo__explicacao3 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+    padding-bottom: 1rem;
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid black;
+}
+
+.logo__whatsapp {
+    width: 15%;
+    max-width: 120px;
+    position: absolute;
+    position: fixed;
+    bottom: 150px;
+    right: 0px;
+    left: 1fr;
+    transition: .8s;
+}
+
+.logo__whatsapp:hover {
+    width: 40%;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+}
+
+.logo__parceria {
+    padding: 1rem;
+    width: 45%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodape__contato {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.onde {
+    background-image: url(./img/Fortaleza.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.onde__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem 4rem;
+}
+
+.mapa {
+    text-align: center;
+    width: 100%;
+    padding: 0 4rem;
+    margin-bottom: 4rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 1rem 0 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+.formulario__titulo {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.formulario__name, .formulario__email, .formulario__mensagem {
+    color: white;
+    width: 100%;
+}
+
+.formulario__name1, .formulario__email1, .formulario__mensagem1 {
+    color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+
+}
+
+
+.formulario__mensagem {
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.formulario__botao {
+    background-color: #0072c4;
+    /* display: block; */
+    padding: 1rem;
+    color: white;
+    font: inherit;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 765px) {
+    .texto__carrossel {
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+    .logos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .logo__parceria {
+        width: 15%;
+        height: 10%;
+    }
+
+    .logo__whatsapp {
+        width: 10%;
+    }
+
+    .formulario__titulo {
+        font-size: 3rem;
+    }
+
+    .rodape__contato {
+        font-size: 1.5rem;
+    }
+
+    
+}
